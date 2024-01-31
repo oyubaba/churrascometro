@@ -67,7 +67,7 @@ newCalculationLink.textContent = 'Novo cálculo';
 
 newCalculationLink.addEventListener('click', function () {
     localStorage.removeItem('counterValues');
-    window.location.href = '/index.html';
+    window.location.href = 'index.html';
 });
 
 // adição dos elementos ao DOM
