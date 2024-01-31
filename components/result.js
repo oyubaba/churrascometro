@@ -61,14 +61,13 @@ results.forEach(result => {
 const rowResultButtonDiv = document.createElement('div');
 rowResultButtonDiv.className = 'row';
 
-const newCalculationLink = document.createElement('a');
-newCalculationLink.href = '/';
+const newCalculationLink = document.createElement('button');
 newCalculationLink.className = 'default-button';
 newCalculationLink.textContent = 'Novo cálculo';
 
 newCalculationLink.addEventListener('click', function () {
     localStorage.removeItem('counterValues');
-    window.location.href = 'index.js';
+    window.location.href = '/index.html';
 });
 
 // adição dos elementos ao DOM
